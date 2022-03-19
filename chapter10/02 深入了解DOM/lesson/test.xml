@@ -1,0 +1,28 @@
+<obj> 
+  <name>好奇代码的三木</name>
+  <gender>男</gender>
+</obj>
+
+<!-- 
+
+  const obj = {
+	name:'好奇代码的三木',
+	gender:'男'
+  } 
+
+json
+
+
+HTML 旨在显示信息（通过浏览器），而 XML 旨在储存和传输信息
+
+
+接口 Interface
+
+UI UI设计师 User Interface 用户界面
+API  Application Programming Interface  
+应用程序接口
+
+连接  相互联系  相互交流的意思
+
+方法 或者 函数
+-->
