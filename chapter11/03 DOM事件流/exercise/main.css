@@ -1,0 +1,11 @@
+.parent{
+  height:300px;
+  width:300px;
+  background-color:gray;
+}
+
+.son{
+  height:100px;
+  width:100px;
+  background-color:black;
+}

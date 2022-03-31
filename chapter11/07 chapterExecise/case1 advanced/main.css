@@ -1,0 +1,64 @@
+body{
+  width:100vw;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.main{
+  width:min-content;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:30px;
+}
+.main-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.img-box-mask{
+  height:262.5px;
+  width:755px;
+  position:relative;
+  overflow:hidden;
+}
+.img-box-move{
+  display:flex;
+  transition:transform 0.5s ease-in-out;
+
+}
+.arrow{
+  width:100px;
+  height:100px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.arrow-unclick{
+  opacity:0.3;
+}
+
+
+.line-box{
+  display:flex;
+  gap:12px;
+}
+
+.line{
+  height:2px;
+  width:16px;
+  background-color:gray;
+  opacity:0.4;
+  display:block;
+}
+
+.line-index{
+  opacity:1;
+}
+
+svg{
+  cursor:pointer;
+}

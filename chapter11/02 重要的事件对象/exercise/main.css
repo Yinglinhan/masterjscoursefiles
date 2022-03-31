@@ -1,0 +1,13 @@
+.container{
+  display:flex;
+  gap:12px;
+}
+.container div{
+  height:100px;
+  width:100px;
+  background-color:black;
+}
+
+.text-container{
+  font-size:32px;
+}
