@@ -1,0 +1,28 @@
+const h1 = document.querySelector(".en")
+console.log(h1)
+const aaa = 1
+const bbb = 3
+
+function test(e, a, b) {
+  //xxxxxx
+}
+
+h1.addEventListener("click", (e) => {
+  test(e, aaa, bbb)
+})
+
+/* 
+
+
+e.preventDefault()
+*/
+
+console.log("onclick" in document)
+cp
+// 怎么提问
+/* 
+1  梳理好自己的代码逻辑和注释
+2  整个文件夹打包发给我
+3  要描述清楚 错误是如何发生的 
+
+*/

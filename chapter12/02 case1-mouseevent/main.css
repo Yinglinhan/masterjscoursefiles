@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "Gilroy Medium";
+  src: url("./src/fonts/Gilroy-Medium.woff2") format("woff2"),
+       url("./src/fonts/Gilroy-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("./src/fonts/OpenSans-Bold.woff2") format("woff2"),
+       url("./src/fonts/OpenSans-Bold.woff") format("woff");
+}
+
+
+body{
+  width:100vw;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  user-select:none;
+}
+
+.container-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:2.5rem;
+}
+
+.card-name{
+  font-family: "OpenSans";
+  font-size:1.8rem;
+}
+.moveBar{
+  padding:1rem 0.6rem;
+  border-radius:0.5rem;
+  background-color:white;
+  display:flex;
+  gap:0.2rem;
+  -webkit-box-shadow: 0px 7px 15px -8px rgba(0,0,0,0.20); 
+  box-shadow: 0px 7px 15px -8px rgba(0,0,0,0.20);
+  cursor:move;
+}
+.dot{
+  height:0.3rem;
+  width:0.3rem;
+  border-radius:100%;
+  background-color:blue;
+  display:inline-block;
+}
+
+
+/* 
+--------- 小卡片区域
+*/
+.container-body{
+  font-family: "Gilroy Medium";
+  display:flex;
+  gap:1rem;
+  
+}
+.currency{
+  /* width:1rem;
+  text-align:center;
+  word-wrap: break-word; */
+  letter-spacing:1px;
+  font-size:0.8rem;
+  transform:rotate(-90deg)
+}
+.one-unit{
+  border:1px solid lightgray;
+  height:14rem;
+  width:6rem;
+  border-radius:100rem;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items:center;
+  padding:2rem 0;
+  background-color:white;
+  transition:all 0.2s ease-in-out;
+}
+.num{
+  font-size:1.8rem;
+}
+.symbol{
+  font-size:0.7rem;
+}
+
+.add-text{
+  transform:translateY(1.5rem) rotate(-90deg);
+  font-size:0.9rem;
+}
+.add-hint{
+  opacity:0.4;
+}
+.add-unit{
+  /* transform:translateY(100px) */
+  border-style:dashed;
+  cursor:pointer;
+}
+
+/* 
+--------- 小竖条选中的状态
+*/
+.selected-unit{
+  background-color:#4F46BA;
+  color:white;
+  border:1px solid #4F46BA;
+  box-shadow: 0px 50.7352px 78.5187px rgba(20, 34, 244, 0.14), 0px 32.8839px 45.9844px rgba(20, 34, 244, 0.106296), 0px 19.5424px 25.0097px rgba(20, 34, 244, 0.085037), 0px 10.147px 12.7593px rgba(20, 34, 244, 0.07), 0px 4.13398px 6.39782px rgba(20, 34, 244, 0.054963);
+  z-index:0;
+}

@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "Gilroy Bold";
+  src: url("./src/fonts/Gilroy-Bold.woff2") format("woff2"),
+       url("./src/fonts/Gilroy-Bold.woff") format("woff");
+}
+
+
+
+body{
+  background-color:#FFF8F2;
+  display:flex;
+  height:100vh;
+  justify-content:center;
+  align-items:center;
+}
+
+.container{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+.content-box{
+  position:relative;
+  height:20rem;
+  width:20rem;
+}
+
+.nav-bar{
+  font-family:"Gilroy Bold";
+  font-size:2rem;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:12rem;
+  margin-bottom:10rem;
+  position:relative;
+}
+
+.title{
+  cursor:pointer;
+  opacity:0.4;
+  transition:opacity 0.2s ease-in-out;
+}
+.title-selected{
+  opacity:1;
+}
+
+
+.title-bg{
+  position:absolute;
+  left:0;
+  transform:translate(20px,10px);
+  z-index:-1;
+  width:6.5rem;
+  height:3.5rem;
+  background-color:white;
+  border-radius:1rem;
+  box-shadow: 36.3808px 36.3808px 41.5781px rgba(176, 112, 63, 0.2);
+  transition:transform 0.3s ease-in-out;
+}
+
+.img-box{
+  height:20rem;
+  width:20rem;
+  position:absolute;
+  transition:opacity 0.3s ease-in-out;
+}
+
+.sunny-bg{
+  background:url('./src/imgs/sunny.png') center no-repeat;
+  background-size:contain;
+  opacity:0;
+}
+
+.cloudy-bg{
+  background:url('./src/imgs/cloudy.png') center no-repeat;
+  background-size:contain;
+  opacity:0;
+}
+
+.rainy-bg{
+  background:url('./src/imgs/rainy.png') center no-repeat;
+  background-size:contain;
+  opacity:0;
+}
+
+.img-selected{
+  opacity:1;
+  z-index:10;
+}
