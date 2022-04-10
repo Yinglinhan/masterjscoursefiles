@@ -59,6 +59,8 @@ function handleBlockUp(e){
     setTimeout(() => {
       clickable = true
     })
+
+
     // clickable = true
     blockMovable = false
 

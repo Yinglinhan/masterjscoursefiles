@@ -20,11 +20,7 @@ body{
   justify-content:center;
   align-items:center;
 }
-.content-box{
-  position:relative;
-  height:20rem;
-  width:20rem;
-}
+
 
 .nav-bar{
   font-family:"Gilroy Bold";
@@ -42,10 +38,10 @@ body{
   opacity:0.4;
   transition:opacity 0.2s ease-in-out;
 }
+
 .title-selected{
   opacity:1;
 }
-
 
 .title-bg{
   position:absolute;
@@ -60,11 +56,18 @@ body{
   transition:transform 0.3s ease-in-out;
 }
 
+.content-box{
+  position:relative;
+  height:20rem;
+  width:20rem;
+}
+
+
 .img-box{
   height:20rem;
   width:20rem;
   position:absolute;
-  transition:opacity 0.3s ease-in-out;
+  /* transition:opacity 0.3s ease-in-out; */
 }
 
 .sunny-bg{

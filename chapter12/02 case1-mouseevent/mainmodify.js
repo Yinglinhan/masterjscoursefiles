@@ -11,6 +11,7 @@ let clickTimeId = 0
 */
 function handleClick(e) {
   if (!clickable) {
+    clickable = true
     return
   }
   const target = e.currentTarget
@@ -185,9 +186,9 @@ function handlMouseUp(e) {
 
   //用来实现拖拽不会点击
   clearTimeout(clickTimeId)
-  setTimeout(() => {
-    clickable = true
-  })
+  // setTimeout(() => {
+  //   clickable = true
+  // })
 
   // 让竖条可移动的变量 还原成false 这样 就不会执行拖拽部分的代码
   blockMoving = false
