@@ -1,0 +1,176 @@
+
+@font-face {
+  font-family: "Gilroy Medium";
+  src: url("./src/fonts/Gilroy-Medium.woff2") format("woff2"),
+       url("./src/fonts/Gilroy-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("./src/fonts/OpenSans-Bold.woff2") format("woff2"),
+       url("./src/fonts/OpenSans-Bold.woff") format("woff");
+}
+
+html{
+  overflow: hidden;
+}
+
+body{
+  margin:0;
+  padding:0;
+}
+
+
+.container{
+  height:100vh;
+  width:100vw;
+  position:relative;
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+  overflow:hidden;
+  justify-content:center;
+}
+.content-box{
+  justify-self:start;
+  height:100vh;
+  width:100vw;
+  transition:transform 0.5s ease-in-out;
+}
+
+.nav-dot{
+  position:absolute;
+  z-index:20;
+  left:2rem;
+  display:flex;
+  flex-direction:column;
+  gap:1rem;
+  align-items:center;
+}
+
+.dot{
+  height:4px;
+  width:4px;
+  background-color:black;
+  display:block;
+  border-radius:10rem;
+}
+
+.big-dot{
+  height:6px;
+  width:6px;
+}
+
+
+.content{
+  height:100vh;
+  width:100vw;
+  transition:transform 0.5s ease-in-out;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 3rem;
+  box-sizing: border-box;
+}
+.part-1{
+  background-color:white;
+}
+
+.text-box{
+  font-size:4rem;
+  display:flex;
+  flex-direction:column;
+  gap:2rem;
+  margin-left:6rem;
+  letter-spacing:1px;
+}
+
+.title{
+  font-size:1.8rem;
+  font-weight:bold;
+ 
+}
+.main-box{
+  display:flex;
+  flex-direction:column;
+}
+.main-hint{
+  font-size:1.5rem;
+  font-family:"Gilroy Medium";
+}
+.main-text{
+  width:10rem;
+  font-family:OpenSans;
+}
+.site{
+  font-size:1rem;
+  font-family:"Gilroy Medium";
+  display:flex;
+  flex-direction:column;
+}
+.site-hint{
+  display:block;
+  height:8px;
+  width:20px;
+  
+  transform:translateY(6px);
+  z-index:-1;
+  /* opacity:0.5; */
+}
+.hint-blue{
+  background-color:blue;
+}
+.hint-green{
+  background-color:green;
+}
+.hint-red{
+  background-color:red;
+}
+.hint-yellow{
+  background-color:yellow;
+}
+
+
+.part1-pic{
+  height:600px;
+  width:600px;
+  background-image:url('./src/imgs/illus-1.png');
+  background-size:contain;
+}
+.part2-pic{
+  height:600px;
+  width:600px;
+  background-image:url('./src/imgs/illus-2.png');
+  background-size:contain;
+}
+.part3-pic{
+  height:600px;
+  width:600px;
+  background-image:url('./src/imgs/illus-3.png');
+  background-size:contain;
+}
+.part4-pic{
+  height:600px;
+  width:600px;
+  background-image:url('./src/imgs/illus-4.png');
+  background-size:contain;
+}
+.part-2{
+  background-color:#FBFBFB;
+}
+.part-3{
+  background-color:#F8F8F8;
+}
+.part-4{
+  background-color:#F5F5F5;
+}
+/* .away-layer{
+  transform:translateY(100vh);
+} */
+.show-layer{
+  z-index:10;
+}
+
+.second-layer{
+  z-index:8;
+}
