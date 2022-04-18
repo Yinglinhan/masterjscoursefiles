@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson scroll</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+      <div class="scroll-info">
+          <span>文档已滚动距离</span>
+          <div>
+            <span id="scroll-num" style="font-size:2rem">0</span>
+            <span> px</span>
+          </div>
+      </div>
+    </div>
+
+    <div class="refer">
+      随文档正常滚动的元素
+    </div>
+   
+    <div class="scroll-target">
+      <span>scrollY发生关系的元素</span>
+      <div class="translate-info">
+        <div class="translate-box">
+          <span>当前translateY</span>
+          <div>
+            <span class="num" id="translate-num">0</span>
+            <span>p x</span>
+          </div>
+        </div>
+        <div class="translate-box">
+          <span>初始translateY</span>
+          <div>
+            <span  class="num" id="init-num">0</span>
+            <span>p x</span>
+          </div>
+        </div>
+        <div class="translate-change">
+          <span>translateY改变值</span>
+          <div>
+            <span  class="num" id="translate-change">0</span>
+            <span>p x</span>
+          </div>
+        </div>
+        <div class="scroll-y">
+          <span>文档整体已滚动</span>
+          <div>
+            <span  class="num" id="scoll-box-num">0</span>
+            <span>p x</span>
+          </div>
+        </div>
+        
+     </div>
+    </div>
+
+    <!-- <span class="moving-text">好奇代码的三木好奇代码的三木好奇代码的三木好奇代码的三木好奇代码的三木好奇代码的三木好奇代码的三木好奇代码的三木好奇代码的三木好奇代码的三木</span> -->
+ 
+    <div style="height:100vh"></div>
+    <div style="height:100vh"></div>
+    <div style="height:100vh"></div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+@font-face {
+  font-family:"Optician Sans";
+  src:url("./src/fonts/OpticianSans.woff") format("woff")
+}
+html{
+  overflow-x:hidden;
+}
+body{
+  background-color:#000000;
+  
+}
+
+.container{
+  padding:2rem;
+}
+
+.part1-container{
+  margin-bottom:20rem;
+}
+.part2-container{
+  margin-top:50rem;
+}
+.stack-container{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  
+}
+
+.stack-text{
+  position:absolute;
+  color:#fff;
+  font-family: "Optician Sans";
+  font-size:3rem;
+  letter-spacing:8px;
+  z-index:11;
+  top:6rem;
+}
+
+.stack-layer{
+  position:absolute;
+}
+
+.first-layer{
+  position:relative;
+  transform:translateY(0px);
+  z-index:10;
+}
+
+.second-layer{
+  transform:translateY(50px);
+  z-index:9;
+}
+.third-layer{
+  transform:translateY(100px);
+  z-index:8;
+}
+.forth-layer{
+  transform:translateY(150px);
+  z-index:7;
+}
+.fifth-layer{
+  transform:translateY(200px);
+  z-index:6;
+}
+.text-box{
+  display:flex;
+  flex-wrap:nowrap;
+
+}
+.moving-text{
+  font-family: "Optician Sans";
+  color:white;
+  font-size:8rem;
+  white-space: nowrap;
+}
+
+.tag-box{
+  position:absolute;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:min-content;
+  transform:translateY(2rem);
+  z-index:20;
+  /* border:1px  solid white; */
+}
+.tag{
+  position:absolute;
+  z-index:10;
+  left:20%;
+}
+.green-tag{
+  position:relative;
+}
+
+.text-tag{
+  left:auto;
+  transform:translateX(1rem);
+}
+
+.part3-container{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  margin-top:20rem;
+  position:relative;
+}
+
+
+.loop{
+  position:absolute;
+}
+
+.hori-loop{
+  transform:translateX(-320px)
+}
+
+.vert-loop{
+  transform:translateY(-160px);
+  z-index:99;
+}
+
+.part4-container{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  margin-top:20rem;
+  position:relative;
+}
+.text-mask{
+  /* border:1px solid white; */
+  background:linear-gradient(to bottom,rgba(0,0,0,.8),30%, black);
+  position:absolute;
+  border-radius:999px 999px 0 0;
+}
