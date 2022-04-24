@@ -124,7 +124,7 @@ function changeTranslate(startY,changeSpan,targetTrans,direction,targetDOM,baseD
 
 // 穿插元素的移动函数
 function changeLoopTrans(startY,targetDOM){
-
+  console.log(targetDOM)
   if(scrollY > startY){
 
     const deltaY = scrollY - startY
@@ -151,7 +151,7 @@ textMask.style.width = bigTitle.offsetWidth +  'px'
 
 
 window.addEventListener('scroll',(e)=>{
-  console.log(scrollY)
+
   stackLayersArr.forEach((item,index)=>{
     stackLayerMove(item,index,targetY)
 
@@ -165,7 +165,7 @@ window.addEventListener('scroll',(e)=>{
 
   changeTranslate(600,300,0,'Y',vertLoop,160)
   changeTranslate(600,180,0,'X',horiLoop,320)
-  changeLoopTrans(900,1000,vertLoop)
+  changeLoopTrans(900,vertLoop)
   
   // 实现半透明遮罩的移动
   if(scrollY > 1300){
