@@ -109,7 +109,7 @@ function changeTranslate(startY,changeSpan,targetTrans,direction,targetDOM,baseD
     
     if(deltaY < changeSpan){
       
-      targetDOM.style.transform = `translate${direction}(-${((1- deltaY / changeSpan) * baseDis) }px)`
+      targetDOM.style.transform = `translate${direction}(-${((1 - deltaY / changeSpan) * baseDis)}px)`
     }else{
 
       targetDOM.style.transform = `translate${direction}(${targetTrans}px)`
@@ -124,7 +124,6 @@ function changeTranslate(startY,changeSpan,targetTrans,direction,targetDOM,baseD
 
 // 穿插元素的移动函数
 function changeLoopTrans(startY,targetDOM){
-  console.log(targetDOM)
   if(scrollY > startY){
 
     const deltaY = scrollY - startY

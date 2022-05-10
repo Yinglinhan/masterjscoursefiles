@@ -1,0 +1,219 @@
+@font-face {
+  font-family:"Gilroy Medium";
+  src:url("./src/fonts/Gilroy-Medium.woff2") format("woff2"),
+      url("./src/fonts/Gilroy-Medium.woff") format("woff")
+}
+
+@font-face {
+  font-family:"OpenSans";
+  src:url("./src/fonts/OpenSans-Bold.woff2") format("woff2"),
+      url("./src/fonts/OpenSans-Bold.woff") format("woff")
+}
+
+body{
+  font-family:Helvetica,Tahoma, Arial,"PingFang SC",STXihei,"Microsoft yahei","WenQuanYi Micro Hei",sans-serif;
+  padding:2rem;
+}
+
+/* 
+
+第一部分 输入框
+
+*/
+
+.input-area{
+  display:flex;
+  align-items:center;
+  gap:1rem;
+}
+.input-buttons{
+  display:flex;
+  gap:0.5rem;
+  font-family:"OpenSans";
+  opacity:0;
+  transition:opacity 0.35s ease-in-out;
+}
+
+.btn{
+  color:white;
+  padding:1rem;
+  padding-left:2rem;
+  padding-right:2rem;
+  border-radius:2rem;
+  font-size:0.8rem;
+  letter-spacing:1px;
+}
+
+.confirm-btn{
+  background-color:#2627CF;
+}
+
+.cancel-btn{
+  background-color:black;
+}
+
+
+input{
+  background-color:#2627CF;
+  border:none;
+  padding:1rem;
+  width:10rem;
+  border-radius:2rem;
+  outline:0;
+  transition:all 0.35s ease-in-out;
+  cursor:pointer;
+}
+
+input::placeholder{
+  color:white;
+  text-align:center;
+}
+
+.input-focus{
+  width:20rem;
+  background-color:white;
+  border:2px solid lightgray;
+  cursor:text;
+}
+
+/* input:focus{
+  width:20rem;
+  background-color:white;
+  border:none;
+  border:2px solid lightgray;
+} */
+
+/* 
+ 
+  --- 代办卡片区域
+
+*/
+.todo-card-container{
+  display:flex;
+  flex-wrap:wrap;
+  margin-top:2rem;
+}
+
+.todo-area{
+  margin-top:10rem;
+}
+.area-header{
+  font-size:2rem;
+  letter-spacing:8px;
+  font-weight:bold;
+}
+.todo-num{
+  opacity:0.3;
+}
+
+.todo-card{
+  height:15rem;
+  width:15rem;
+  border-radius:1.4rem;
+  padding:2rem;
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-right:2rem;
+  margin-bottom:2rem;
+  flex-shrink:0;
+  transition:all 0.35s ease-in-out;
+}
+
+.edit-block{
+  width:100%;
+  height:100%;
+  outline:0;
+  pointer-events:none;
+}
+
+.card-orange{
+  background-color:#E8A281;
+}
+.card-qing{
+  background-color:#5FCFF1;
+}
+.card-green{
+  background-color:#E1E79F;
+}
+
+.card-yellow{
+  background-color:#EEC984;
+}
+.card-purple{
+  background-color:#B39AEE;
+}
+
+
+.icons-bar{
+  padding:0 1rem;
+  box-sizing: border-box;
+  flex-grow:2;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  position:absolute;
+  bottom:0.4rem;
+  /* border:2px solid black; */
+}
+.four-icons{
+  display:flex;
+  gap:0.5rem;
+  
+}
+
+.icon-box{
+  position:relative;
+  transition:all 0.35s ease-in-out;
+  cursor:pointer;
+}
+
+.color-board{
+  position:absolute;
+  display:flex;
+  gap:0.8rem;
+  left:-1.9rem;
+  top:-2rem;
+  transition:all 0.35s ease-in-out;
+}
+
+.color-init{
+  opacity:0;
+  transform:translatey(10px);
+}
+
+.color-board > span{
+  height:0.8rem;
+  width:0.8rem;
+  border:2px solid black;
+  border-radius:100%;
+}
+
+.icon-init{
+  opacity:0;
+  transform:translateX(20px)
+}
+
+.svg-icon{
+  transition:transform 0.35s ease-in-out;
+}
+.svg-init{
+  transform:rotate(35deg)
+}
+.icon-box-done-init{
+  opacity:0;
+  transform:translateX(-20px)
+}
+.svg-done-init{
+  transform:rotate(-35deg)
+}
+.delete-circle{
+  position:absolute;
+  transform:rotate(-90deg);
+  left:0;
+}
+.delete-circle > circle {
+
+  transition:all 2s linear;
+}

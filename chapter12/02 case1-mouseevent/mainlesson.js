@@ -87,7 +87,7 @@ function changePos(allUnits, disX, moveWidth){
 
   currentPosIndex = moveStep + targetIndex
 
-  console.log(moveStep)
+
 
 
   for (let i = 0; i < allUnits.length; i++) {
@@ -97,6 +97,7 @@ function changePos(allUnits, disX, moveWidth){
   }
 
   if (currentPosIndex > targetIndex) {
+    
     const needMoveCount = currentPosIndex - targetIndex
 
     for (let i = 1; i <= needMoveCount; i++) {
