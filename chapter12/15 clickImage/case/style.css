@@ -1,0 +1,79 @@
+
+
+@font-face {
+  font-family: "Gilroy Medium";
+  src: url("./src/fonts/Gilroy-Medium.woff2") format("woff2"),
+       url("./src/fonts/Gilroy-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("./src/fonts/OpenSans-Bold.woff2") format("woff2"),
+       url("./src/fonts/OpenSans-Bold.woff") format("woff");
+}
+
+
+body{
+  background-color:#FFF8F2;
+  padding:0;
+  margin:0;
+}
+
+.container{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin-top:300px;
+}
+
+.icon-box{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  width:600px;
+  height:600px;
+  
+}
+
+.icon-box > span {
+  font-family: "OpenSans";
+  opacity:0.3;
+  font-size:2rem;
+  margin-bottom:1rem;
+}
+
+.icon-div{
+  width:200px;
+  height:200px;
+  transition:all 0.35s ease-in-out;
+  background-size: cover;
+  
+}
+
+.cloudy-div{
+  background-image:url('./src/img/cloudy.png');
+}
+.sunny-div{
+  background-image:url('./src/img/sunny.png');
+}
+.rainy-div{
+  background-image:url('./src/img/rainy.png');
+}
+.thunder-div{
+  background-image:url('./src/img/thunder.png');
+}
+.moon-div{
+  background-image:url('./src/img/moon.png');
+}
+
+
+.show-layer{
+  position:fixed;
+  top:0;
+  left:0;
+  height:100vh;
+  width:100vw;
+  background-color:rgba(0,0,0,0);
+  pointer-events:none;
+  transition:all 0.35s ease-in-out;
+}
