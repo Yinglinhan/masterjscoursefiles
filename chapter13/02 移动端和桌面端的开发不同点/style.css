@@ -1,0 +1,8 @@
+.container{
+  width:200vw;
+  height:20vh;
+  background-color:red;
+}
+body{
+  touch-action:pan-y;
+}

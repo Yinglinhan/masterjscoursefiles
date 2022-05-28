@@ -1,0 +1,56 @@
+html{
+  overflow:hidden;
+  height:100%;
+}
+body{
+  padding:0;
+  margin:0;
+  background-color:black;
+
+}
+
+.container{
+  display:grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto ;
+  gap:8px;
+  position:absolute;
+  /* transform: rotate(-6deg); */
+}
+
+.one-block{
+  /* border:1px solid red; */
+  display:grid;
+  width:368px;
+  gap:8px;
+  grid-template-columns: repeat(2,180px);
+  grid-template-rows: repeat(3,180px);
+  /* transform: skew(6deg); */
+}
+
+
+.img{
+  width:180px;
+  height:180px;
+  background-size: cover;
+  border-radius:18px;
+}
+
+.people-img1{
+  background-image:url('src/img/1.png')
+}
+.people-img2{
+  background-image:url('src/img/2.png')
+}
+.people-img3{
+  background-image:url('src/img/3.png')
+}
+.people-img4{
+  background-image:url('src/img/4.png')
+}
+.people-img5{
+  background-image:url('src/img/5.png')
+}
+.people-img6{
+  background-image:url('src/img/6.png')
+}

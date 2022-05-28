@@ -1,0 +1,90 @@
+
+@font-face {
+  font-family: "Gilroy Medium";
+  src: url("./src/fonts/Gilroy-Medium.woff2") format("woff2"),
+       url("./src/fonts/Gilroy-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("./src/fonts/OpenSans-Bold.woff2") format("woff2"),
+       url("./src/fonts/OpenSans-Bold.woff") format("woff");
+}
+
+
+
+html{
+  overflow:hidden;
+}
+body{
+  padding:0;
+  margin:0;
+  background-color: black;
+}
+.container{
+  /* background-color:red; */
+  background-color: black;
+  overflow:hidden;
+}
+
+.circle-hint{
+  padding:2rem;
+  display:flex;
+}
+.circle{
+  height:10px;
+  width:10px;
+  border-radius:100%;
+  background-color:white;
+  display:block;
+  opacity:0.5;
+  margin-right:8px;
+}
+
+.pages-box{
+  display:flex;
+  
+}
+.one-page{
+  padding:0 2rem;
+  flex-shrink:0;
+  box-sizing: border-box;
+  transform:rotateY(15deg);
+  transform-style: preserve-3d;
+  perspective: 800px;
+}
+.one-page-transform{
+  /* transform:rotateY(15deg); */
+  transform-origin:left center;
+}
+
+.page-titles{
+  color:white;
+  display:flex;
+  flex-direction:column;
+  font-family:"OpenSans";
+  font-size:2rem;
+}
+
+.page-card{
+  margin-top:40px;
+  background-color:blue;
+  height:420px;
+  border-radius:2rem;
+  color:white;
+  padding:1rem;
+
+  font-family:Gilroy Medium;
+  position:relative;
+}
+.page-card > p{
+  opacity:0.8;
+  letter-spacing:1px;
+  line-height:1.5;
+}
+.page-card > img{
+  width:100%;
+  position:absolute;
+  bottom:1rem;;
+  left:0;
+}
