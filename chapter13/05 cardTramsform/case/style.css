@@ -1,0 +1,143 @@
+
+@font-face {
+  font-family: "Gilroy Medium";
+  src: url("./src/fonts/Gilroy-Medium.woff2") format("woff2"),
+       url("./src/fonts/Gilroy-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("./src/fonts/OpenSans-Bold.woff2") format("woff2"),
+       url("./src/fonts/OpenSans-Bold.woff") format("woff");
+}
+
+
+body{
+  margin:0;
+  background-color: black;
+  padding:0;
+}
+
+.container{
+  box-sizing: border-box;
+}
+
+.card-stage{
+  padding:2rem;
+  position:relative;
+  transform-style: preserve-3d;
+  perspective:800px;
+}
+.one-card{
+
+  position:relative;
+  padding:1rem;
+  width:100%;
+  background-color:blue;
+  height:480px;
+  border-radius:2rem;
+  box-sizing: border-box;
+  color:white;
+  transition: all 0.5s ease-in-out;
+
+  
+}
+
+.card-transform > p{
+  font-family:Gilroy Medium;
+  letter-spacing:1px;
+  line-height:1.5;
+}
+
+.card-transform > img {
+  width:100%;
+  position:absolute;
+  bottom:0px;
+  left:0px;
+}
+.clip-scroll{
+  height:105px;
+  overflow:hidden; // 把小卡片的横向滚动轴
+  z-index:10;
+}
+
+.card-click-stage{
+  display:flex;
+  padding:0 2rem;
+  overflow-x:scroll;
+  box-sizing: border-box;
+  height:120px;
+
+}
+
+
+.card-color-board{
+  margin-right:1rem;  
+  flex-shrink:0;
+  height:100px;
+  width:80px;
+  background-color:blue;
+  border-radius:12px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-family:"OpenSans";
+  font-size:2rem;
+  transition:transform 0.35s ease-in-out;
+}
+.card-color-board > span {
+  color:white;
+}
+
+.slide-bar{
+  font-family:Gilroy Medium;
+  color:white;
+  padding:2rem;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.slide-bar > span:first-child{
+  font-size:10px;
+}
+.control-bar{
+  width:80%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:relative;
+}
+.line{
+  width:100%;
+  height:1px;
+  background-color:rgba(255,255,255,0.3);
+  overflow:hidden;
+
+}
+.progress-line{
+  width:100%;
+  background-color:white;
+  height:100%;
+  transform:translateX(-100%);
+}
+.touch-circle{
+  height:14px;
+  width:14px;
+  border-radius:100%;
+  display:block;
+  background-color:blue;
+  z-index:2;
+  position:absolute;
+  left:0;
+  /* touch-action:pan-x; */
+}
+
+
+.card-titles{
+  padding:2rem;
+  color:white;
+  display:flex;
+  flex-direction:column;
+  font-size:2.5rem;
+  font-family:OpenSans;
+}

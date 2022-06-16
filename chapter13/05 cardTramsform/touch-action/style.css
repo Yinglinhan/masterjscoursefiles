@@ -1,0 +1,50 @@
+
+html {
+  /* touch-action: pinch-zoom; */
+  /* touch-action: manipulation; */
+  /* touch-action:none; */
+  /* touch-action:pan-x pinch-zoom; */
+}
+body{
+  /* touch-action: none; */
+  /* touch-action: manipulation; */
+  /* touch-action: pan-x; */
+  /* touch-action: pinch-zoom; */
+}
+
+.horizontal-box{
+  display: flex;
+  /* touch-action: pan-x; */
+}
+
+.hbox{
+  height:200px;
+  width:300px;
+  flex-shrink:0;
+
+
+}
+
+.box.blue{
+  /* touch-action: pan-x; */
+  background-color:yellow;
+}
+
+.red{
+  background-color:red;
+}
+
+.blue {
+  background-color:blue;
+}
+
+.yellow {
+  background-color:yellow;
+}
+
+
+.box{
+  height:600px;
+  width:200px;
+
+}
