@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <script>
+
+    const xhr = new XMLHttpRequest();
+
+    xhr.addEventListener('load',()=>{
+      console.log(xhr.response)
+    })
+
+    xhr.addEventListener('progress',(e)=>{
+      console.log(e.lengthComputable,e.loaded)
+    })
+
+
+    xhr.open('GET', 'https://console-mock.apipost.cn/app/mock/project/8dcbedb7-e91e-4cd3-8301-8b4a788de906/test');
+    
+    xhr.responseType = "json"
+    xhr.send()
+
+
+    
+
+
+  </script>
+</body>
+</html>

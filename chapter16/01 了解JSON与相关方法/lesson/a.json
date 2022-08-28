@@ -1,0 +1,15 @@
+{
+  "name":"好奇代码的三木",
+  "age":18,
+  "male":true,
+  "courses":{
+    "best":"masterjs"
+  },
+  "computers":[
+    "imac",17,false,null
+  ],
+  "enough":null
+
+}
+
+
