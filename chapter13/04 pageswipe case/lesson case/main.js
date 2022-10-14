@@ -224,7 +224,7 @@ class Controller {
         
       }else if(x < this.moveInfo.startX){
         // console.log('向左')
-        if(this.currentIndex !== this.pageNum - 1){
+        if(this.currentIndex !== this.pagesDatas.length - 1){
           this.currentIndex++
         }
         this.pageBox.style.transition = `transform 0.35s ease-in-out`
