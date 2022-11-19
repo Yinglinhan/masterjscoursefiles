@@ -163,28 +163,28 @@
 // 只要是是undefined null 和 NaN 
 // 你就要把这个属性名称输出到控制台
 
-// var obj = {
-// 	a:'123',
-// 	b:undefined,
-// 	c:666,
-// 	d:null,
-// 	e:NaN,
-//   f:999,
-//   g:null,
-// }
+var obj = {
+	a:'123',
+	b:undefined,
+	c:666,
+	d:null,
+	e:NaN,
+  f:999,
+  g:null,
+}
 
-// var temp
+var temp
 
-// for (var key in obj){
-//   // console.log(key,obj[key])
-//   temp += obj[key] + ''
-//   // console.log(temp)
-//   if(obj[key] === undefined || obj[key] === null || temp === 'NaN'){
+for (var key in obj){
+  // console.log(key,obj[key])
+  temp = obj[key] + ''
+  // console.log(temp)
+  if(obj[key] === undefined || obj[key] === null || temp === 'NaN'){
 
-//     console.log(obj[key])
-//   }
-//   temp = ''
-// }
+    console.log(obj[key])
+  }
+
+}
 
 
 
@@ -222,20 +222,20 @@
 // 当 i = 3 的时候 结束所有循环
 // 当 j = 6 的时候 结束所有循环
 
-var lock = false
+// var lock = false
 
-for (var i = 0; i<10;i++){
+// for (var i = 0; i<10;i++){
 
-    if(lock){
-      break;
-    }
+//     if(lock){
+//       break;
+//     }
   
-  for(var j = 0; j<10;j++){
-    if(j === 6){
-      lock = true
-      break;
-    }
-    console.log(i + '-' +j)
-  }
+//   for(var j = 0; j<10;j++){
+//     if(j === 6){
+//       lock = true
+//       break;
+//     }
+//     console.log(i + '-' +j)
+//   }
 
-}
+// }

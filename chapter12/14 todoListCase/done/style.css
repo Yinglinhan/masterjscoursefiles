@@ -55,7 +55,7 @@ input::placeholder{
   gap:0.5rem;
   font-size:12px;
   letter-spacing:1px;
-  font-family:'openSans'
+  font-family:'openSans';
 }
 .button-box > span{
   padding:0.8rem 2rem;
