@@ -73,5 +73,6 @@ function drawClock() {
   ctx.restore()
   requestAnimationFrame(drawClock)
 }
+drawClock()
 
-requestAnimationFrame(drawClock)
+// requestAnimationFrame()
