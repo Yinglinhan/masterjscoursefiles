@@ -1,0 +1,68 @@
+html,body{
+  padding: 0;
+  margin: 0;
+  cursor: none;
+}
+
+/* 
+ --- 鼠标样式相关 ---
+*/
+canvas[resize]{
+  height: 100%;
+  width: 100%;
+  /* border: 10px solid red; */
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.mousePoint{
+  height: 8px;
+  width: 8px;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+}
+
+.container{
+  border: 1px solid red;
+  padding: 20px;
+}
+.info-header{
+  display: flex;
+  flex-direction: column;
+  gap:100px;
+}
+.info-header-nav{
+  display: flex;
+  justify-content: space-between;
+}
+.info-header-nav-badge{
+  display: flex;
+  gap:12px;
+}
+
+.info-header-text{
+  display: flex;
+  flex-direction: column;
+}
+.info-header-imgs{
+  position: relative;
+  border: 1px solid  green;
+  width: fit-content;
+}
+
+.info-header-imgs-img{
+  width: 300px;
+  height: 300px;
+  background-color: lightgray;
+}
+.info-header-imgs-rotate{
+  position: absolute;
+  right: 0;
+  top: 0;
+
+}

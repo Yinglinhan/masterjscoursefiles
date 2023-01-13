@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    video{
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+
+  <video src="./src/video.mp4" controls></video>
+  <span class="play-icon">play</span>
+</body>
+
+
+<script>
+  const video = document.querySelector('video')
+
+  const playIcon = document.querySelector('.play-icon')
+
+  playIcon.addEventListener('click',()=>{
+    video.playbackRate = 1.0
+
+    video.play()
+    video.currentTime = 2
+    // console.log(video.paused)
+  })
+  video.addEventListener('seeking',()=>{
+    console.log('seeking')
+  })
+  video.addEventListener('seeked',()=>{
+    console.log('seeked')
+  })
+
+
+  // video.oncanplay= function(e){
+  //   // console.log(e.target)
+  //   e.target.play()
+  // }
+
+
+
+</script>
+</html>

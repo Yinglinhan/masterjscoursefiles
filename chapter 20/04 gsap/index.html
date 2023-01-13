@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .box{
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      color:white;
+      font-size: 5rem;
+      font-weight: 100;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="box">
+123
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+</body>
+
+<script>
+
+  const tween = gsap.to('.box',{
+    x:300,
+    duration:2,
+    delay:2,
+    backgroundColor:'blue',
+    fontSize:'5rem',
+    color:'yellow',
+    fontWeight: 900
+  })
+
+  console.log(tween)
+
+
+</script>
+</html>

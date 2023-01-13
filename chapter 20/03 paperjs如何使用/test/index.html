@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-C ompatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html,body{
+      margin: 0;
+      padding:0;
+      overscroll-behavior: none;
+      height: 100vh;
+    }
+    .box{
+      height: 100px;
+      width: 100px;
+      background-color: red;
+    }
+    /* canvas[resize]{
+      border: 10px solid black;
+      box-sizing: border-box;
+      margin: 0;
+      padding:0;
+      width: 100%;
+      height: 100vh;
+    } */
+
+    canvas{
+      border: 10px solid black;
+      box-sizing: border-box;
+      /* height: 500px;
+      width: 500px; */
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+  </style>
+</head>
+<body>
+  <div>123</div>
+
+  <canvas id="myCanvas" ></canvas>
+
+
+
+  <script src="./paper-full.js"></script>
+  <script>
+
+    
+
+    window.onload = function(){
+     
+      paper.install(window)
+      paper.setup('myCanvas')
+      // const path = new Path()
+      // path.strokeColor = 'black'
+      // const start = new Point(100,100);
+      // path.moveTo(start);
+      // path.lineTo(start.add([200,-50]))
+      // view.draw()
+
+
+      var myPath = new Path();
+      myPath.strokeColor = 'black';
+      myPath.add(new Point(0, 0));
+      myPath.add(new Point(100, 50));
+
+
+
+      const myCircle = new Path.Circle(new Point(100,100),30)
+      myCircle.strokeColor = 'black'
+      myCircle.strokeWidth = 10
+
+
+      const lerp = (a, b, n) => {
+        return (1 - n) * a + n * b;
+      };
+
+
+
+      const tool = new Tool()
+    
+      function onMouseDown(event) {
+	// Add a segment to the path at the position of the mouse:
+      console.log(event)
+    }
+
+      tool.onMouseDown = onMouseDown
+      tool.onMouseDrag = function(e){
+        console.log(111)
+      }
+
+      let mouseX = 0,mouseY = 0,lastX = 0, lastY = 0;
+
+      tool.onMouseMove = function(e){
+        // console.log(e.delta)
+        console.log(e.point)
+        mouseX = e.point.x
+        mouseY = e.point.y
+      }
+
+
+      view.onFrame = function(){
+        lastX = lerp(lastX,mouseX,0.2)
+        lastY = lerp(lastY,mouseY,0.2)
+        // console.log(lastX,lastY)
+        myCircle.position = new Point(lastX,lastY)
+        // console.log(1)
+      }
+
+
+    }
+    
+
+    // var canvas = document.getElementById('myCanvas');
+		// Create an empty project and a view for the canvas:
+		// paper.setup('myCanvas');
+    // var path = new paper.Path();
+		// // Give the stroke a color
+		// path.strokeColor = 'black';
+		// var start = new paper.Point(100, 100);
+		// // Move to start and draw a line from there
+		// path.moveTo(start);
+		// // Note that the plus operator on Point objects does not work
+		// // in JavaScript. Instead, we need to call the add() function:
+		// path.lineTo(start.add([ 200, 100 ]));
+		// path.lineTo(start.add([ 300, 100 ]));
+    // console.log(start.add(200,200))
+		// // Draw the view now:
+		// paper.view.draw();
+
+    // console.log(paper.PaperScript)
+    // var myCircle = new paper.Path.Circle(new paper.Point(100, 70), 50);
+    // myCircle.fillColor = 'black'; 
+  </script>
+</body>
+</html>

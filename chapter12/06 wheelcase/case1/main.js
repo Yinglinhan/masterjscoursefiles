@@ -3,6 +3,7 @@ const dotsArr = [...document.querySelectorAll('.dot')]
 
 
 let currentIndex = 0
+
 let timeId = 0
 let deltaTotal = 0
 // console.log(box.childElementCount)

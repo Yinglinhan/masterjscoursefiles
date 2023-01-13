@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated.css</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <style>
+    :root{
+      --animate-duration: 5s;
+    }
+    #box{
+      height: 100px;
+      width: 100px;
+      background-color: rgb(246, 201, 38);
+      animation: flash; /* referring directly to the animation's @keyframe declaration */
+      animation-duration: 2s; /* don't forget to set a duration! */
+    }
+  </style>
+</head>
+<body>
+  <h1>Animated.css</h1>
+  
+  <div id="box" >
+
+  </div>
+
+
+</body>
+</html>

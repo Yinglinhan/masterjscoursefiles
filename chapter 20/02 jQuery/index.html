@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h1 class="hj">jQuery</h1>
+  <h1 class="hj">jQuery</h1>
+  <h1 class="hj">jQuery</h1>
+  <h1 class="ht">jQuery</h1>
+  <h1 >jQuery</h1>
+  <h1>jQuery</h1>
+  <script src="./src/jquery-3.6.3.min.js"></script>
+  <script>
+    // console.log($ ===  jQuery)
+
+    const hjs = $('.hj')
+    // console.log(hjs)
+    hjs.each(function(i,dom){
+      const d = $(dom)
+      d.addClass('colorRed')
+    })
+    // h1.addClass('colorRed')
+
+    const ht = $('.ht')
+    // console.log(ht)
+    ht.css({ "color": "white", "background": "blue" })
+
+    ht.hover(()=>{
+      console.log('我在元素上')
+    },()=>{
+      console.log('我移出元素啦')
+    })
+
+  </script>
+</body>
+</html>

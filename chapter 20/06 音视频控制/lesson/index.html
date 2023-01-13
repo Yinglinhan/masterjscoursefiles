@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>video和音频</title>
+  <style>
+    video{
+      width: 800px;
+    }
+  </style>
+</head>
+<body>
+  <h1>video和audio的控制</h1>
+  <video src="./src/video.mp4" controls></video>
+  <span>play</span>
+  <span id="stop">stop</span>
+</body>
+
+
+<script>
+  const video = document.querySelector('video')
+  console.log(video)
+  const playIcon = document.querySelector('span')
+  const stopIcon = document.querySelector('#stop')
+  playIcon.addEventListener('click',()=>{
+      video.play()
+  })
+  stopIcon.addEventListener('click',()=>{
+      video.pause()
+  })
+
+  video.addEventListener('canplay',()=>{
+
+  })
+  video.playbackRate = 4.0
+
+
+  // setTimeout(()=>{
+  //   video.currentTime = 5
+  // },1000)
+
+  /* 
+  
+  三个方法
+
+  play
+
+  pause
+
+  load
+
+  属性
+
+  currentTime 数字就是秒 触发seek
+
+  playbackRate
+
+  volume
+  
+  
+  */
+
+</script>
+</html>
