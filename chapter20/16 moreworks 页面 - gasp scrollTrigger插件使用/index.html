@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>scrollTrigger</title>
+</head>
+
+<style>
+  body{
+    padding: 2rem;
+  }
+  .header{
+    width: 100%;
+    height: 300px;
+    background-color: red;
+  }
+
+  .scrollContent{
+    width: 100%;
+    height: 1000px;
+    background-color: yellow;
+    display: flex;
+    /* overflow-x: hidden; */
+  }
+  .footer{
+    width: 100%;
+    height: 300px;
+    background-color: blue;
+  }
+  .part1{
+    height: 100%;
+    width: 1000px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .part2{
+    height: 100%;
+    width: 1200px;
+    box-sizing: border-box;
+    border: 2px solid pink;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .part3{
+    height: 100%;
+    width: 1400px;
+    box-sizing: border-box;
+    border: 2px solid green;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+</style>
+
+<body>
+  <div class="header">
+
+  </div>
+  <div class="scrollContent">
+    <div class="block part1">part1</div>
+    <div class="block part2">part2</div>
+    <div class="block part3">part3</div>
+
+  </div>
+  <div class="footer"></div>
+
+
+  
+  <script src="./gsap.min.js"></script>
+  <script src="./ScrollTrigger.min.js"></script>
+  <script src="main.js"></script>
+  
+</body>
+</html>

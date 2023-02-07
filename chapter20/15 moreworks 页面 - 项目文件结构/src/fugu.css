@@ -1,0 +1,64 @@
+.fugu{
+  background: linear-gradient(red 0%, #ff0 15%, #0ff 50%, #00f 65%,#ff00ff 80%, red 100%);;
+
+}
+.fugu .info-header-nav-title-box{
+  font-family: Impact;
+  background: linear-gradient(#6900cc, #cb00cc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transform: scale(0.9, 1.65) rotate(-3deg) skewY(-3deg) translateY(20px) translateZ(0);
+}
+
+.fugu .info-header-nav-title{
+  z-index: 2;
+  background: inherit;
+  background-clip: inherit;
+  -webkit-background-clip: inherit;
+}
+
+.fugu .info-header-nav-title-box::before{
+  content: 'Portfolio';
+  position: absolute;
+  text-shadow: 0.094em 0.063em #adadff;
+  z-index: -1;
+}
+.fugu .info-header-text-detail{
+  font-family: 'Comic Sans MS', 'Comic Sans', 'Marker Felt', sans-serif;
+}
+
+.fugu .info-header-text-more{
+  color: blue;
+  text-decoration: underline;
+  background-color: lightgrey;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 2px;
+  padding-bottom: 5px;
+  border: 3px solid #333;
+  border-top-color: #CCCCCC;
+  border-left-color: #CCCCCC;
+}
+.fugu .info-header-text-more::before,.fugu .info-header-text-more::after{
+  display: none;
+}
+
+.fugu canvas{
+  opacity: 0;
+}
+
+.fugu .mousePoint{
+  background-image: url('./imgs/cursor.svg');
+  height: 30px;
+	width: 18px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 10px;
+  left: 6px;
+}
+
+.fugu .mousePoint.bigDot{
+  background-image: url('./imgs/cursor-hover.svg');
+}
