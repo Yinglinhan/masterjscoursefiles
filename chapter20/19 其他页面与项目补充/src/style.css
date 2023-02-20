@@ -9,6 +9,10 @@ html,body{
   background-color: var(--color);
   color: aqua;
 }
+a{
+  text-decoration: none;
+  color: black;
+}
 
 /* 
  --- 鼠标样式相关 ---

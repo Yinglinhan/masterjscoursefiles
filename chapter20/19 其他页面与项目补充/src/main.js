@@ -3,7 +3,7 @@ import WorkList from './components/workList.js'
 import pageInit from './components/pageInit.js'
 
 
-// pageInit()
+pageInit()
 
 
 

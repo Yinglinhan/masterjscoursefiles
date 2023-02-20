@@ -47,7 +47,7 @@ body{
   justify-content:center;
   align-items:center;
   gap:10px;
-  transform:translateY(-200px)
+  transform:translateY(-200px);
 }
 .moving-text{
   position:absolute;

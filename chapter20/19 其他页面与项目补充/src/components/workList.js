@@ -10,7 +10,7 @@ export default class WorkList {
     const htmlText = `
     <div class="one-work">
           <div class="one-work-text-box">
-            <a href="moreworks/#footer" class="one-work-title">
+            <a href="moreworks" class="one-work-title">
               ${workData.title}
             </a >
   
