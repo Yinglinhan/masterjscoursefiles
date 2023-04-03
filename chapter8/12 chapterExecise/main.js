@@ -117,7 +117,7 @@
 //   let result;
 //   if(arr.length <=3){
 //     result = arr.reduce((accumulator,currentValue) => accumulator * currentValue,1)
-    
+
 //   }else{
 //     result = arr.reduce((accumulator,currentValue) => accumulator + currentValue,0)
 //   }
@@ -144,22 +144,22 @@
 
 */
 
-function controller(){
-  const  cache = []
+function controller() {
+  const cache = []
 
   return {
-    listen(fn){
+    listen(fn) {
       cache.push(fn)
     },
-    dispatch(){
+    dispatch() {
       cache.forEach(item => item())
     }
   }
 }
 
 const con = controller()
-// console.log(con)
-con.listen(()=>{console.log(666)})
-con.listen(()=>{console.log(888)})
-con.listen(()=>{console.log(999)})
+console.dir(con)
+con.listen(() => { console.log(666) })
+con.listen(() => { console.log(888) })
+con.listen(() => { console.log(999) })
 con.dispatch()
