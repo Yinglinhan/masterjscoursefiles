@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    
+    <title>JavaScript高手之路全能课</title>
+  </head>
+  <body>
+    <h1>表单数据处理与剪贴板</h1>
+    <h1 class="en">formData & clipBoard</h1>
+    <br />
+    <h2>JavaScript高手之路全能课</h2>
+    <h3>好奇代码的三木</h3>
+
+    <div class="dot">
+      <svg
+        width="62"
+        viewbox="0 0 82 90"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M67.4128 23.2095C58.5343 0.14309 39.2658 15.0297 26.4995 45.7057C13.7331 76.3816 28.9453 90.9835 55.7656 82.4853C82.5858 73.987 76.2912 46.2759 67.4128 23.2095Z"
+          fill="#4627FF"
+        />
+        <path
+          d="M51.9776 37.8465C42.9799 29.182 77.9709 27.8491 30.3165 3.52199C-10.2332 -17.1782 -13.0746 60.2152 39.9807 58.1746C57.3096 57.5081 60.9753 46.5109 51.9776 37.8465Z"
+          fill="#46FB19"
+        />
+      </svg>
+    </div>
+    <form id="table" action="/submit-form"  method="post"> 
+      <label for="name">姓名：</label>
+      <input type="text" id="name" name="name" required>
+    
+      <br>
+    
+      <label>性别：</label>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">男</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">女</label>
+    
+      <br>
+    
+      <label>爱好：</label>
+      <input type="checkbox" id="hobby1" name="hobby" value="reading">
+      <label for="hobby1">阅读</label>
+      <input type="checkbox" id="hobby2" name="hobby" value="sports">
+      <label for="hobby2">运动</label>
+      <input type="checkbox" id="hobby3" name="hobby" value="music">
+      <label for="hobby3">音乐</label>
+    
+      <br>
+    
+      <label for="city">城市：</label>
+      <select id="city" name="city">
+        <option value="">请选择城市</option>
+        <option value="beijing">北京</option>
+        <option value="shanghai">上海</option>
+        <option value="guangzhou">广州</option>
+        <option value="shenzhen">深圳</option>
+      </select>
+    
+      <br>
+    
+      <input type="button" value="提交" id="btn">
+    </form>
+
+  </body>
+  <script src="./main.js"></script>
+</html>
