@@ -1,0 +1,20 @@
+{
+  "name": "xx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ttt":"ls"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "gsap": "^3.12.2"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  }
+}
