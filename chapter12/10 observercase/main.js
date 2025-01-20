@@ -221,7 +221,7 @@ function cb(entries) {
 
 const options = {
   rootMargin: '20px',
-  threshold: 1
+  threshold: 0.75
 }
 
 const observer = new IntersectionObserver(cb, options)
