@@ -1,7 +1,7 @@
 
 
 
-function fine(){
+function fine() {
 	console.log("好的")
 	console.log("我知道了")
 	console.log("谢谢")
@@ -18,6 +18,7 @@ function fine(){
 
 
 var fine2 = fine
+
 // fine2()
 
 
@@ -33,11 +34,11 @@ person.hello()
 
 var obj = {
 
-	hello: function (){
-	  // 要执行的代码
+	hello: function () {
+		// 要执行的代码
 	},
-	
-	go(){
+
+	go() {
 		// 要执行的代码
 	},
 };

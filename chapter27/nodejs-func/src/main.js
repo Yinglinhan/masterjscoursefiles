@@ -23,6 +23,8 @@ const btn = document.querySelector('#button');
 
 
 
+
+
 btn.addEventListener('click', async (e) => {
   e.target.style.backgroundColor = 'blue';
 
